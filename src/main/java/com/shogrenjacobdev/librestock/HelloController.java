@@ -12,9 +12,9 @@ import java.io.IOException;
 
 public class HelloController {
     Stage stage;
-    @FXML
-    private Button login_button;
-    private MenuItem loginquit_menu;
+    @FXML private Button login_button;
+    @FXML private MenuItem loginquit_menu;
+    @FXML private MenuItem loginAboutLibre_menu;
 
     @FXML
     private void onLoginButtonClick() throws IOException{
@@ -59,7 +59,21 @@ public class HelloController {
         stage.show();
     }
 
+    @FXML
     public void quitMenuClick() throws IOException{
         javafx.application.Platform.exit();
+    }
+
+    @FXML
+    public void openAboutMenuClick() throws IOException{
+        System.out.println("User Opened Docs...");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage)login_button.getScene().getWindow();
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }

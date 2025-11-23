@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
 import java.io.IOException;
 
@@ -13,6 +14,8 @@ public class EditItemController {
     @FXML private Button edititemreturn_button;
     @FXML private Button edititemsubmit_button;
     @FXML private Button edititemsearch_button; // saved for later even if not used currently
+    @FXML private MenuItem edititemquit_menu;
+    @FXML private MenuItem edititemaboutlibrestock_menu;
 
     @FXML
     private void edititemReturnButtonClick() throws IOException{
@@ -37,5 +40,23 @@ public class EditItemController {
     private void edititemSearchButtonClick() throws IOException{
         System.out.println("searching data fr fr");
         /* put craaaaazy search logic here later (some sort of search method for items in the db) */
+    }
+
+        @FXML
+    public void quitEditItemMenuClick() throws IOException{
+        javafx.application.Platform.exit();
+    }
+
+    @FXML
+    public void openEditItemAboutMenuClick() throws IOException{
+        System.out.println("User Opened Docs...");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage)edititemreturn_button.getScene().getWindow();
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }
