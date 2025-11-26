@@ -53,7 +53,7 @@ public class DbAccess {
                 }
             }
 
-            return new ArrayList<Map<String,Object>>();
+            return null;
         }
         catch(SQLException e) {
             System.out.println("SQLException in DBAccess.runQuery:" + e.getMessage());
