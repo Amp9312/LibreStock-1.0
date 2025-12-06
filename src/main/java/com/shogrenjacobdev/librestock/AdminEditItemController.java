@@ -164,32 +164,6 @@ public class AdminEditItemController {
         } catch (IllegalArgumentException iae) {
             showMessage(iae.getMessage());
         }
-        /* String enteredAdminItemCollection = getAdminItemCollectionFromDB();
-           String enteredAdminItemName = getAdminItemCollectionFromDB();
-           String enteredAdminItemQuantity = getAdminItemCollectionFromDB();
-           String enteredAdminItemSKU = getAdminItemCollectionFromDB();
-
-        Will need to turn off itemID field to prevent insertion anomalies in the DB
-
-        if(adminitemID match found) {
-        adminedititemitemID_textfield.setEditable(false);
-        }
-        
-        This is where it checks if the textfields are currently editable.   
-        if(!adminedititemcollection_textfield.isEditable()){
-           adminedititemcollection_textfield.setEditable(true);
-           adminedititemitemname_textfield.setEditable(true);
-           adminedititemquantity_textfield.setEditable(true);
-           adminedititemsku_textfield.setEditable(true);
-           }
-        
-
-        Here is where the textfield values get set - this should just work as is   
-        adminedititemcollection_textfield.setText(itemcollection);
-        adminedititemitemname_textfield.setText(itemName);
-        adminedititemquantity_textfield.setText(itemQuantity);
-        adminedititemsku_textfield.setText(itemSKU);
-        */
     }
 
     @FXML

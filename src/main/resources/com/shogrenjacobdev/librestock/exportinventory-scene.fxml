@@ -67,7 +67,7 @@
             <Insets left="20.0" top="10.0" />
          </VBox.margin>
       </Text>
-      <Text fx:id="exportinventoryinstructions_label" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE: This tool enables a full export of the current inventory database. Fill out the fields and read the HINTS to successfully back up your inventory." wrappingWidth="578.6890258789062">
+      <Text fx:id="exportinventoryinstructions_label" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE: This tool enables a full export of the current inventory database. Fill out the fields and confirm instructions found in LibreStock documentation to successfully back up your inventory." wrappingWidth="578.6890258789062">
          <VBox.margin>
             <Insets left="40.0" />
          </VBox.margin>
@@ -115,9 +115,6 @@
                      <padding>
                         <Insets left="10.0" />
                      </padding>
-                     <children>
-                        <Label fx:id="exportinventoryhint_label" text="HINT: If submit turns green, export file was saved in application directory. If submit button red, export failed. " wrapText="true" />
-                     </children>
                   </HBox>
                </children>
                <padding>

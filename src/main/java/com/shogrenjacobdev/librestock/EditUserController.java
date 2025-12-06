@@ -72,8 +72,12 @@ private void showInfo(String message) {
         String lastName   = edituserlastname_textfield.getText();
         boolean makeAdmin = editusermakeadmin_check.isSelected();
     if (idText == null || idText.isBlank()) {
-        showError("User ID is required.");
-        return;
+        if(username == null || username.isBlank()){
+            showError("User ID is required.");
+        return;}
+        else if(!username.isBlank()){
+            // If no ID is provided but a username is, perform a lookup by username to get the ID
+        }
     }
 
     int userId;
@@ -131,9 +135,29 @@ private void showInfo(String message) {
         System.out.println("Searching for user and applying updates if user exists...");
 
         String idText = edituseruserID_textfield.getText();
+        String username = edituserusername_textfield.getText();
         if (idText == null || idText.isBlank()) {
+           if(username == null || username.isBlank()){
             showError("User ID is required.");
-            return;
+        return;}
+        else if(!username.isBlank()){
+            // If no ID is provided but a username is, perform a lookup by username to get the ID
+            try {
+                DbAccess db = new DbAccess();
+                java.util.List<java.util.Map<String, Object>> rows = db.runQuery("SELECT userId FROM users WHERE username = ?", username.trim());
+                if (rows == null || rows.isEmpty() || rows.get(0).get("userId") == null) {
+                    showError("No user found with username: " + username);
+                    return;
+                }
+                Object idObj = rows.get(0).get("userId");
+                idText = idObj.toString();
+                edituseruserID_textfield.setText(idText);
+            } catch (SQLException sqle) {
+                sqle.printStackTrace();
+                showError("Database error: " + sqle.getMessage());
+                return;
+            }
+        }
         }
 
         int userId;
@@ -160,7 +184,7 @@ private void showInfo(String message) {
             String dbFirst   = row.get("firstName") == null ? "" : row.get("firstName").toString();
             String dbLast    = row.get("lastName") == null ? "" : row.get("lastName").toString();
 
-            String username = edituserusername_textfield.getText();
+            //String username = edituserusername_textfield.getText();
             String password = edituserpassword_textfield.getText();
             String confirm  = edituserconfirmpassword_textfield.getText();
             String firstName= edituserfirstname_textfield.getText();
