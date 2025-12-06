@@ -67,7 +67,7 @@
             <Insets left="20.0" top="10.0" />
          </VBox.margin>
       </Text>
-      <Text fx:id="deleteuserinstructions_label" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE: This will remove a user. To remove a user, you must know the userID of this person. If UserID is unknown, return to menu and use edit user to check UserID. Confirm your admin password and hit submit to delete. Without a backup, this change is permenent." wrappingWidth="578.6890258789062">
+      <Text fx:id="deleteuserinstructions_label" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTE: This will remove a user. To remove a user, you must know the userID of this person. If UserID is unknown, return to menu and use edit user to check UserID. Confirm your admin password and hit submit to delete. This change is permenent." wrappingWidth="578.6890258789062">
          <VBox.margin>
             <Insets left="40.0" />
          </VBox.margin>

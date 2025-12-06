@@ -56,7 +56,7 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Help">
           <items>
-            <MenuItem fx:id="aboutlibrestockopendocs_menu" mnemonicParsing="false" text="Open Documentation" />
+            <MenuItem fx:id="aboutlibrestockopendocs_menu" mnemonicParsing="false" onAction="#openAboutMenuClick" text="Open Documentation" />
           </items>
         </Menu>
       </menus>
@@ -93,7 +93,7 @@
                   </HBox>
                   <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="76.0" prefWidth="450.0">
                      <children>
-                        <Button fx:id="docsdocs_button" disable="true" mnemonicParsing="false" onAction="#aboutLibreDocsButtonClick" prefHeight="26.0" prefWidth="242.0" text="Documentation (Coming Soon)" wrapText="true">
+                        <Button fx:id="docsdocs_button" mnemonicParsing="false" onAction="#aboutLibreDocsButtonClick" prefHeight="26.0" prefWidth="242.0" text="Documentation" wrapText="true">
                            <HBox.margin>
                               <Insets left="10.0" right="10.0" />
                            </HBox.margin>

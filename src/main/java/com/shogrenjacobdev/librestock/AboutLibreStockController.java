@@ -29,12 +29,18 @@ public class AboutLibreStockController {
         stage.show();
     }
 
-    /* This doesnt do anything
     @FXML
     private void aboutLibreDocsButtonClick() throws IOException{
-        System.out.println("submitting data fr fr");
-        put craaaaazy submit logic here later (some sort of update method for collections in the db)
-    }*/
+        System.out.println("Opening documentation");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("documentation-scene.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage)docsreturn_button.getScene().getWindow();
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @FXML
     public void quitAboutLibreMenuClick() throws IOException{
@@ -44,8 +50,7 @@ public class AboutLibreStockController {
     @FXML
     public void openAboutMenuClick() throws IOException{
         System.out.println("User Opened Docs...");
-        // Currently this infinitely loops - when documentation is finished this will point to that fxml file
-        FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
+        FXMLLoader loader3 = new FXMLLoader(getClass().getResource("documentation-scene.fxml"));
         Parent root = loader3.load();
 
         Stage stage = (Stage)docsreturn_button.getScene().getWindow();
