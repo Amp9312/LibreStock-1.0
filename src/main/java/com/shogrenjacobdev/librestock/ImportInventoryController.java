@@ -1,19 +1,18 @@
 package com.shogrenjacobdev.librestock;
 
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.List;
-import java.util.Map;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.Map;
 
 public class ImportInventoryController {
     Stage stage;
@@ -79,8 +78,7 @@ public class ImportInventoryController {
 
             if (user.get("password").equals(importpass)) {
                 // Import Inventory
-                Inv.ImportInventory(importFileName);
-                //System.out.println("Successfully Imported inventory");
+                System.out.println("Successfully Imported inventory");
                 showInfo("Inventory successfully Imported!");
             }
             else {
