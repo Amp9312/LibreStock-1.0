@@ -43,7 +43,7 @@ public class NewItemController {
 
     @FXML
     private void newitemReturnButtonClick() throws IOException{
-        System.out.println("Returning to user dash scene");
+        //System.out.println("Returning to user dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("userdash-view.fxml"));
         Parent root = loader.load();
 
@@ -56,7 +56,7 @@ public class NewItemController {
 
     @FXML
     private void newitemSubmitButtonClick() throws IOException{
-        System.out.println("submitting data fr fr");
+        //System.out.println("submitting data fr fr");
         /*This process works as follows:
         1.) Capture input from fields
         2.) Match collection with existing collection name 
@@ -168,7 +168,7 @@ public class NewItemController {
 
     @FXML
     public void openNewItemAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

@@ -109,7 +109,7 @@ public class firsttimesetupcontroller {
 
     @FXML
     private void returnButtonClick() throws IOException{
-        System.out.println("Returning to main menu");
+        //System.out.println("Returning to main menu");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login-scene.fxml"));
         Parent root = loader.load();
 
@@ -127,7 +127,7 @@ public class firsttimesetupcontroller {
 
     @FXML
     public void openFirstTimeSetupAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader.load();
 

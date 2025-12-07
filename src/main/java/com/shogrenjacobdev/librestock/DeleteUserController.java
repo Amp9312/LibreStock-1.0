@@ -43,7 +43,7 @@ private void showInfo(String message) {
 
     @FXML
     private void deleteuserreturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admindash-view.fxml"));
         Parent root = loader.load();
 
@@ -113,7 +113,7 @@ private void showInfo(String message) {
 
     @FXML
     public void openDeleteUserAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

@@ -47,7 +47,7 @@ public class DeleteCollectionController {
 
     @FXML
     private void delcolsearchButtonClick() throws IOException{
-        System.out.println("searching data fr fr");
+        //System.out.println("searching data fr fr");
         /*This process works as follows:
         1.) Capture CollectionID
         2.) Perform search for match in collection DB using collection ID
@@ -128,7 +128,7 @@ public class DeleteCollectionController {
     }
     @FXML
     private void delcolsubmitButtonClick() throws IOException{
-        System.out.println("deleting for data fr fr");
+        //System.out.println("deleting for data fr fr");
         /*Process works as follows:
         1.) Look up item using collection ID
         2.) If a match is found, find out how many items have that collection type
@@ -217,7 +217,7 @@ public class DeleteCollectionController {
 
     @FXML
     public void openDeleteCollectionAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

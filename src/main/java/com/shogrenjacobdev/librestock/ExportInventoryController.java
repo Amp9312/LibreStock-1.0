@@ -27,7 +27,7 @@ public class ExportInventoryController {
 
     @FXML
     private void exportreturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admindash-view.fxml"));
         Parent root = loader.load();
 
@@ -56,7 +56,7 @@ public class ExportInventoryController {
 
     @FXML
     private void exportsubmitButtonClick() throws IOException{
-        System.out.println("exporting data fr fr");
+        //System.out.println("exporting data fr fr");
 
         String fileName = exportinventoryfilename_textfield.getText();
         String adminuser = exportinventoryusername_textfield.getText();
@@ -104,7 +104,7 @@ public class ExportInventoryController {
 
     @FXML
     public void openExportInventoryAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

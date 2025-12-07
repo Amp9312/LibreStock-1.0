@@ -41,7 +41,7 @@ public class AdminEditItemController {
 
     @FXML
     private void adminededititemReturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admindash-view.fxml"));
         Parent root = loader.load();
 
@@ -54,7 +54,6 @@ public class AdminEditItemController {
 
     @FXML
     private void adminedititemSubmitButtonClick() throws IOException{
-        System.out.println("submitting data fr fr");
         /*Process is as follows: 
         1. Capture data from collection, item name, quantity, and sku
         1.5) Check if user only entered item name - if so, then run lookup method instead
@@ -146,13 +145,16 @@ public class AdminEditItemController {
 
     @FXML
     private void adminedititemSearchButtonClick() throws IOException{
-        System.out.println("searching data fr fr");
+        //System.out.println("searching data fr fr");
         /* Process is as follows:
         1.) Capture data from itemID field
         2.) Match data against all items in item DB
         3.) If match is found, disable itemID field, and enable fields and populate them with data from that database entry 
         3.5) If match is not found, throw error state
-*/
+*/      
+        //unit test
+        //testAdminItemCheckForSearch();
+
         try {
             boolean found = adminCheckForSearch();
             if (!found) {
@@ -165,6 +167,22 @@ public class AdminEditItemController {
             showMessage(iae.getMessage());
         }
     }
+
+    // Unit test for adminCheckForSearch
+    /*public void testAdminItemCheckForSearch(){
+        try {
+            boolean found = adminCheckForSearch();
+            if (found) {
+                System.out.println("Item found and fields populated.");
+            } else {
+                System.out.println("No matching item found.");
+            }
+        } catch (java.sql.SQLException sqle) {
+            System.err.println("SQLException in EditItemController.testItemCheckForSearch: " + sqle.getMessage());
+        } catch (IllegalArgumentException iae) {
+            System.out.println(iae.getMessage());
+        }
+    }*/
 
     @FXML
     public void quitAdminEditItemMenuClick() throws IOException{
@@ -241,7 +259,7 @@ public class AdminEditItemController {
 
     @FXML
     public void openAdminEditItemAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader.load();
 

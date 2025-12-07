@@ -31,7 +31,7 @@ public class DocumentationController{
 
         root = new TreeItem<>();
         root.setExpanded(true);
-
+        //testMakeBranch();
         //item1 is the user documentation
         item1=makeBranch("User Documentation", root);
         makeBranch("Logging In", item1);
@@ -116,9 +116,18 @@ public class DocumentationController{
         return item;
     }
 
+    //unit test for helper function makeBranch
+    /*public void testMakeBranch(){
+        TreeItem<String> testRoot = new TreeItem<>("Root");
+        TreeItem<String> child = makeBranch("Child", testRoot);
+        assert child.getValue().equals("Child") : "makeBranch failed to set correct value";
+        assert testRoot.getChildren().contains(child) : "makeBranch failed to add child to parent";
+        System.out.println("makeBranch test passed.");
+    }*/
+
     @FXML
     private void documentationReturnButtonClick() throws IOException{
-        System.out.println("Returning to about librestock scene");
+        //System.out.println("Returning to about librestock scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader.load();
 

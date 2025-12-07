@@ -56,7 +56,7 @@ public class AdminNewItemController {
 
     @FXML
     private void adminnewitemSubmitButtonClick() throws IOException{
-        System.out.println("submitting data fr fr");
+        //System.out.println("submitting data fr fr");
         /*This process works as follows:
         1.) Capture input from fields
         2.) Match collection with existing collection name 
@@ -170,7 +170,7 @@ public class AdminNewItemController {
 
     @FXML
     public void openAdminNewItemAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

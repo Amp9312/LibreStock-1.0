@@ -44,7 +44,7 @@ public class AdminDashController {
     @FXML
     private void colCreationButtonClick() throws IOException{
         /*open col creation view */
-        System.out.println("Opening collection creation scene");
+        //System.out.println("Opening collection creation scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("addcollection-scene.fxml"));
         Parent root = loader.load();
 
@@ -58,7 +58,7 @@ public class AdminDashController {
     @FXML
     private void colEditingButtonClick() throws IOException{
         /*open col edit view */
-        System.out.println("Opening collection editing scene");
+        //System.out.println("Opening collection editing scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("editcollection-scene.fxml"));
         Parent root = loader.load();
 
@@ -72,7 +72,7 @@ public class AdminDashController {
     @FXML
     private void coldeletionButtonClick() throws IOException{
     /*open col deletion view */
-        System.out.println("Opening collection deletion scene");
+        //System.out.println("Opening collection deletion scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("deletecollection-scene.fxml"));
         Parent root = loader.load();
 
@@ -86,7 +86,7 @@ public class AdminDashController {
     @FXML
     private void exportinvenButtonClick() throws IOException{
     /*open export inventory view */
-        System.out.println("Opening export inventory scene");
+        //System.out.println("Opening export inventory scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("exportinventory-scene.fxml"));
         Parent root = loader.load();
 
@@ -100,7 +100,7 @@ public class AdminDashController {
     @FXML
     private void importinvenButtonClick() throws IOException{
     /*open import inventory view */
-        System.out.println("Opening import inventory scene");
+        //System.out.println("Opening import inventory scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("importinventory-scene.fxml"));
         Parent root = loader.load();
 
@@ -113,8 +113,7 @@ public class AdminDashController {
 
     @FXML
     private void adminlogoutButtonClick() throws IOException{
-    /*log user out fr fr*/
-        System.out.println("user logged out fr fr");
+        //System.out.println("user logged out fr fr");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login-scene.fxml"));
         Parent root = loader.load();
 
@@ -128,7 +127,7 @@ public class AdminDashController {
 @FXML
     private void adminNewItemMenuClick() throws IOException{
     
-        System.out.println("user opening make item");
+        //System.out.println("user opening make item");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("adminnewitem-scene.fxml"));
         Parent root = loader.load();
 
@@ -142,7 +141,7 @@ public class AdminDashController {
 @FXML
     private void adminEditItemMenuClick() throws IOException{
     
-        System.out.println("user opening edit item");
+        //System.out.println("user opening edit item");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("adminedititem-scene.fxml"));
         Parent root = loader.load();
 
@@ -156,7 +155,7 @@ public class AdminDashController {
 @FXML
     private void adminDeleteItemMenuClick() throws IOException{
     
-        System.out.println("user deleting item");
+        //System.out.println("user deleting item");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admindeleteitem-scene.fxml"));
         Parent root = loader.load();
 
@@ -170,7 +169,7 @@ public class AdminDashController {
 @FXML
     private void adminAddUserMenuClick() throws IOException{
     
-        System.out.println("admin opening make user");
+        //System.out.println("admin opening make user");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("adduser-scene.fxml"));
         Parent root = loader.load();
 
@@ -184,7 +183,7 @@ public class AdminDashController {
 @FXML
     private void adminRemoveUserMenuClick() throws IOException{
     
-        System.out.println("admin opening edit user");
+        //System.out.println("admin opening edit user");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("deleteuser-scene.fxml"));
         Parent root = loader.load();
 
@@ -198,7 +197,7 @@ public class AdminDashController {
 @FXML
     private void adminEditUserItemMenuClick() throws IOException{
     
-        System.out.println("admin editing user");
+        //System.out.println("admin editing user");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("edituser-scene.fxml"));
         Parent root = loader.load();
 
@@ -216,7 +215,7 @@ public class AdminDashController {
 
     @FXML
     public void openAdminDashAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader.load();
 

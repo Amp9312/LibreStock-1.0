@@ -102,8 +102,7 @@ public class HelloController {
 
     @FXML
     private void onFirstTimeButtonClick() throws IOException{
-        System.out.println("First Time User Option Clicked...");
-        System.out.println("User Logged In...");
+        //System.out.println("First Time User Option Clicked...");
         FXMLLoader loader2 = new FXMLLoader(getClass().getResource("firsttimesetup-scene.fxml"));
         Parent root = loader2.load();
 
@@ -140,7 +139,7 @@ public class HelloController {
 
     @FXML
     private void onLogoutButtonClick() throws IOException{
-        System.out.println("User Logged Out...");
+        //System.out.println("User Logged Out...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("login-scene.fxml"));
         Parent root = loader3.load();
 
@@ -158,7 +157,7 @@ public class HelloController {
 
     @FXML
     public void openAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader.load();
 

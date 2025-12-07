@@ -37,7 +37,7 @@ public class AddCollectionController {
 
     @FXML
     private void addcolreturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admindash-view.fxml"));
         Parent root = loader.load();
 
@@ -50,7 +50,7 @@ public class AddCollectionController {
 
     @FXML
     private void addcolsubmitButtonClick() throws IOException{
-        System.out.println("submitting data fr fr");
+        //System.out.println("submitting data fr fr");
         /* Process should work as follows:
         1.) Capture input data
         2.) Formulate query using this input data
@@ -116,7 +116,7 @@ public class AddCollectionController {
 
     @FXML
     public void openAddCollectionAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

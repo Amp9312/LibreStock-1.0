@@ -22,7 +22,7 @@ public class UserDashController {
 
     @FXML
     private void newItemButtonClick() throws IOException{
-        System.out.println("Making new item...");
+        //System.out.println("Making new item...");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("newitem-scene.fxml"));
         Parent root = loader.load();
 
@@ -47,7 +47,7 @@ public class UserDashController {
 
     @FXML
     private void editItemButtonClick() throws IOException{
-        System.out.println("Editing item...");
+        //System.out.println("Editing item...");
         FXMLLoader loader2 = new FXMLLoader(getClass().getResource("edititem-scene.fxml"));
         Parent root = loader2.load();
 
@@ -60,7 +60,7 @@ public class UserDashController {
 
     @FXML
     private void onLogoutButtonClick() throws IOException{
-        System.out.println("User Logged Out...");
+        //System.out.println("User Logged Out...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("login-scene.fxml"));
         Parent root = loader3.load();
 
@@ -78,7 +78,7 @@ public class UserDashController {
 
     @FXML
     public void openUserAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

@@ -18,7 +18,7 @@ public class AboutLibreStockController {
 
     @FXML
     private void aboutLibreReturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login-scene.fxml"));
         Parent root = loader.load();
 
@@ -31,7 +31,7 @@ public class AboutLibreStockController {
 
     @FXML
     private void aboutLibreDocsButtonClick() throws IOException{
-        System.out.println("Opening documentation");
+        //System.out.println("Opening documentation");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("documentation-scene.fxml"));
         Parent root = loader.load();
 
@@ -49,7 +49,7 @@ public class AboutLibreStockController {
 
     @FXML
     public void openAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("documentation-scene.fxml"));
         Parent root = loader3.load();
 

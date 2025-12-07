@@ -131,7 +131,7 @@ public class EditCollectionController {
 
     @FXML
     private void editcolsearchButtonClick() throws IOException{
-        System.out.println("searching collection data");
+        //System.out.println("searching collection data");
 
         String enteredCollectionID = editcollectioncollectionID_textfield.getText();
         if (enteredCollectionID == null) enteredCollectionID = "";
@@ -204,7 +204,7 @@ public class EditCollectionController {
 
     @FXML
     public void openEditCollectionAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader3 = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader3.load();
 

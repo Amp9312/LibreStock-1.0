@@ -35,7 +35,7 @@ public class AdminDeleteItemController {
 
     @FXML
     private void admindelitemreturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("admindash-view.fxml"));
         Parent root = loader.load();
 
@@ -48,7 +48,7 @@ public class AdminDeleteItemController {
 
     @FXML
     private void admindelitemsearchButtonClick() throws IOException{
-        System.out.println("searching data fr fr");
+        //System.out.println("searching data fr fr");
         /*This process works as follows:
         1.) Capture itemID
         2.) Perform search for match in itemDB using itemID

@@ -36,7 +36,7 @@ public class EditItemController {
 
     @FXML
     private void edititemReturnButtonClick() throws IOException{
-        System.out.println("Returning to admin dash scene");
+        //System.out.println("Returning to admin dash scene");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("userdash-view.fxml"));
         Parent root = loader.load();
 
@@ -49,7 +49,7 @@ public class EditItemController {
 
     @FXML
     private void edititemSubmitButtonClick() throws IOException{
-        System.out.println("submitting data fr fr");
+        //System.out.println("submitting data fr fr");
         // Capture entered values
         String enteredItemID = edititemitemID_textfield.getText();
         String enteredCollection = edititemcollection_textfield.getText();
@@ -134,9 +134,9 @@ public class EditItemController {
         }
     }
 
-        @FXML
+    @FXML
     private void edititemSearchButtonClick() throws IOException{
-        System.out.println("searching data fr fr");
+        //System.out.println("searching data fr fr");
         /* Process is as follows:
         1.) Capture data from itemID field
         2.) Match data against all items in item DB
@@ -144,6 +144,8 @@ public class EditItemController {
         3.5) If match is not found, throw error state
 */
         try {
+            // run unit test
+            //testItemCheckForSearch();
             boolean found = checkForSearch();
             if (!found) {
                 // This should not happen because checkForSearch throws when not found,
@@ -213,6 +215,21 @@ public class EditItemController {
 
         throw new IllegalArgumentException("No matching item in the database.");
     }
+    // unit test method
+    /*public void testItemCheckForSearch(){
+        try {
+            boolean found = checkForSearch();
+            if (found) {
+                System.out.println("Item found and fields populated.");
+            } else {
+                System.out.println("No matching item found.");
+            }
+        } catch (java.sql.SQLException sqle) {
+            System.err.println("SQLException in EditItemController.testItemCheckForSearch: " + sqle.getMessage());
+        } catch (IllegalArgumentException iae) {
+            System.out.println(iae.getMessage());
+        }
+    }*/
 
         @FXML
     public void quitEditItemMenuClick() throws IOException{
@@ -236,7 +253,7 @@ public class EditItemController {
 
     @FXML
     public void openEditItemAboutMenuClick() throws IOException{
-        System.out.println("User Opened Docs...");
+        //System.out.println("User Opened Docs...");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("librestockdocs.fxml"));
         Parent root = loader.load();
 
