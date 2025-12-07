@@ -38,7 +38,6 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -54,15 +53,6 @@
             <MenuItem fx:id="userdashquit_menu" mnemonicParsing="false" onAction="#quitUserMenuClick" text="Quit" />
                </items>
             </Menu>
-        <Menu mnemonicParsing="false" text="Generate Report">
-          <items>
-            <MenuItem mnemonicParsing="false" text="All Items, A-Z" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="All Collections, ID 1-100" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem mnemonicParsing="false" text="All Items, Sorted by Quantity" />
-          </items>
-        </Menu>
         <Menu mnemonicParsing="false" text="Help">
           <items>
             <MenuItem fx:id="userdashaboutlibrestock_menu" mnemonicParsing="false" onAction="#openUserAboutMenuClick" text="About LibreStock" />
